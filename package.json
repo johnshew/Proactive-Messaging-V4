@@ -1,0 +1,31 @@
+{
+  "name": "nagbot",
+  "version": "1.0.0",
+  "description": "Task nagging leveraging Microsoft Graph and the Bot Framework.",
+  "main": "./lib/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./lib/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "concurrently --kill-others \"tsc -w\" \"nodemon --inspect ./lib/app.js\""
+  },
+  "author": "Microsoft",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^4.2.0",
+    "dotenv": "^6.2.0",
+    "restify": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/restify": "^7.2.7",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.9",
+    "tslint": "^5.12.0",
+    "tslint-microsoft-contrib": "^6.0.0",
+    "typescript": "^3.2.2"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  }
+}
